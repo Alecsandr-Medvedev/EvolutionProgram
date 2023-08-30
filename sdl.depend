@@ -1,0 +1,2685 @@
+# depslib dependency file v1.0
+1675349396 source:c:\users\slava\documents\projects\codeblocks\sdl\main.cpp
+	"Main.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\main.h
+	"GUI.h"
+	"Field.h"
+	"NeuralNetRenderer.h"
+	"AutomaticAdaptation.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\gui.h
+	"SDL.h"
+	"Main.h"
+
+1675350938 c:\users\slava\documents\projects\codeblocks\sdl\sdl.h
+	"Settings.h"
+	"MyTypes.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\settings.h
+
+1675349348 c:\users\slava\documents\projects\codeblocks\sdl\mytypes.h
+	"Systems.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\systems.h
+	<fstream>
+	<thread>
+	<condition_variable>
+	<filesystem>
+	<vector>
+	"imgui.h"
+	"imgui_impl_sdl.h"
+	"imgui_impl_sdlrenderer.h"
+	"imgui_impl_opengl3.h"
+	"implot.h"
+	<SDL.h>
+	<SDL_opengl.h>
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\field.h
+	"Settings.h"
+	"MyTypes.h"
+	"Object.h"
+	"Bot.h"
+	"Apple.h"
+	"Rock.h"
+	"Organics.h"
+	"ObjectSaver.h"
+	"Chart.h"
+	"ImageFactory.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\object.h
+	"Field.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\bot.h
+	"Field.h"
+	"BotNeuralNet.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\botneuralnet.h
+	"Neuron.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\neuron.h
+	"Settings.h"
+	"MyTypes.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\apple.h
+	"Field.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\rock.h
+	"Field.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\organics.h
+	"Field.h"
+
+1675351538 c:\users\slava\documents\projects\codeblocks\sdl\objectsaver.h
+	"Field.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\chart.h
+	"Settings.h"
+	"SDL.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\imagefactory.h
+	"Field.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\neuralnetrenderer.h
+	"BotNeuralNet.h"
+	"SDL.h"
+
+1674653983 c:\users\slava\documents\projects\codeblocks\sdl\automaticadaptation.h
+	"Main.h"
+
+1675283348 c:\users\slava\documents\projects\codeblocks\sdl\imgui.h
+	"imconfig.h"
+	<float.h>
+	<stdarg.h>
+	<stddef.h>
+	<string.h>
+	<assert.h>
+	"imgui_user.h"
+
+1675283348 c:\users\slava\documents\projects\codeblocks\sdl\imconfig.h
+
+1675283348 source:c:\users\slava\documents\projects\codeblocks\sdl\imgui_demo.cpp
+	"imgui.h"
+	<ctype.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdint.h>
+
+1675283348 source:c:\users\slava\documents\projects\codeblocks\sdl\imgui_draw.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	"misc/freetype/imgui_freetype.h"
+	<stdio.h>
+	"imstb_rectpack.h"
+	"imstb_truetype.h"
+
+1675283348 c:\users\slava\documents\projects\codeblocks\sdl\imgui_internal.h
+	"imgui_internal.h"
+	"imgui.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<limits.h>
+	<immintrin.h>
+	"imstb_textedit.h"
+
+1675283348 c:\users\slava\documents\projects\codeblocks\sdl\imstb_textedit.h
+	<string.h>
+
+1675283348 c:\users\slava\documents\projects\codeblocks\sdl\imstb_rectpack.h
+	<stdlib.h>
+	<assert.h>
+
+1675283348 c:\users\slava\documents\projects\codeblocks\sdl\imstb_truetype.h
+	"stb_truetype.h"
+	<stdio.h>
+	"stb_truetype.h"
+	<math.h>
+	<math.h>
+	<math.h>
+	<math.h>
+	<math.h>
+	<stdlib.h>
+	<assert.h>
+	<string.h>
+	<string.h>
+
+1675283348 source:c:\users\slava\documents\projects\codeblocks\sdl\imgui_tables.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	<stddef.h>
+	<stdint.h>
+
+1675283348 source:c:\users\slava\documents\projects\codeblocks\sdl\imgui_widgets.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	<stddef.h>
+	<stdint.h>
+	"imstb_textedit.h"
+
+1675283348 c:\users\slava\documents\projects\codeblocks\sdl\imgui_impl_opengl3.h
+	"imgui.h"
+	<TargetConditionals.h>
+
+1675283348 source:c:\users\slava\documents\projects\codeblocks\sdl\imgui_impl_opengl3.cpp
+	"imgui.h"
+	"imgui_impl_opengl3.h"
+	<stdio.h>
+	<stddef.h>
+	<stdint.h>
+	<TargetConditionals.h>
+	<OpenGLES/ES2/gl.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<OpenGLES/ES3/gl.h>
+	<GLES3/gl3.h>
+	"imgui_impl_opengl3_loader.h"
+	<stdio.h>
+
+1675283348 c:\users\slava\documents\projects\codeblocks\sdl\imgui_impl_opengl3_loader.h
+	<stdint.h>
+	<windows.h>
+	<stdlib.h>
+	<windows.h>
+	<dlfcn.h>
+	<dlfcn.h>
+
+1675283348 c:\users\slava\documents\projects\codeblocks\sdl\imgui_impl_sdl.h
+	"imgui.h"
+
+1675283348 c:\users\slava\documents\projects\codeblocks\sdl\imgui_impl_sdlrenderer.h
+	"imgui.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_guid.h"
+	"SDL_haptic.h"
+	"SDL_hidapi.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_metal.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"SDL_locale.h"
+	"SDL_misc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+	<winsdkver.h>
+	<sdkddkver.h>
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
+	<AvailabilityMacros.h>
+	<TargetConditionals.h>
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\begin_code.h
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\close_code.h
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<sys/cpuinline.h>
+	<mbarrier.h>
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<endian.h>
+	<endian.h>
+	<sys/endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<arm_neon.h>
+	<altivec.h>
+	<arm_neon.h>
+	<armintr.h>
+	<arm_neon.h>
+	<arm64intr.h>
+	<arm64_neon.h>
+	<mm3dnow.h>
+	<lsxintrin.h>
+	<lasxintrin.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_guid.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_guid.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_hidapi.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_metal.h
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_locale.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_misc.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
+1675283348 source:c:\users\slava\documents\projects\codeblocks\sdl\imgui_impl_sdl.cpp
+	"imgui.h"
+	"imgui_impl_sdl.h"
+	<SDL.h>
+	<SDL_syswm.h>
+	<TargetConditionals.h>
+
+1672757821 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_syswm.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	<windows.h>
+	<Inspectable.h>
+	<X11/Xlib.h>
+	<X11/Xatom.h>
+	<directfb.h>
+	<UIKit/UIKit.h>
+	"SDL_egl.h"
+	<os2.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757820 c:\users\public\plugins\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_egl.h
+	<psp2/types.h>
+	<EGL/egl.h>
+	<EGL/eglext.h>
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+	<windows.h>
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<kernel/image.h>
+
+1675283348 source:c:\users\slava\documents\projects\codeblocks\sdl\imgui_impl_sdlrenderer.cpp
+	"imgui.h"
+	"imgui_impl_sdlrenderer.h"
+	<stddef.h>
+	<stdint.h>
+	<SDL.h>
+
+1669390318 c:\users\slava\documents\projects\codeblocks\sdl\implot.h
+	"imgui.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\apple.cpp
+	"Apple.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\automaticadaptation.cpp
+	"AutomaticAdaptation.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\bot.cpp
+	"Bot.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\botneuralnet.cpp
+	"BotNeuralNet.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\chart.cpp
+	"Chart.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\field.cpp
+	"Field.h"
+
+1675350867 source:c:\users\slava\documents\projects\codeblocks\sdl\gui.cpp
+	"GUI.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\imagefactory.cpp
+	"ImageFactory.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\mytypes.cpp
+	"MyTypes.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\neuralnetrenderer.cpp
+	"NeuralNetRenderer.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\neuron.cpp
+	"Neuron.h"
+
+1669390318 source:c:\users\slava\documents\projects\codeblocks\sdl\implot.cpp
+	"implot.h"
+	"implot_internal.h"
+	<stdlib.h>
+
+1669390318 c:\users\slava\documents\projects\codeblocks\sdl\implot_internal.h
+	<time.h>
+	"imgui_internal.h"
+
+1669390318 source:c:\users\slava\documents\projects\codeblocks\sdl\implot_demo.cpp
+	"implot.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"implot_internal.h"
+
+1669390318 source:c:\users\slava\documents\projects\codeblocks\sdl\implot_items.cpp
+	"implot.h"
+	"implot_internal.h"
+	<immintrin.h>
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\object.cpp
+	"Bot.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\organics.cpp
+	"Organics.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\rock.cpp
+	"Rock.h"
+
+1674653983 source:c:\users\slava\documents\projects\codeblocks\sdl\sdl.cpp
+	"SDL.h"
+
+1675349024 source:c:\users\slava\documents\projects\codeblocks\sdl\objectsaver.cpp
+	"Field.h"
+
+1675283348 source:c:\users\slava\documents\projects\codeblocks\sdl\imgui.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	<stdio.h>
+	<stddef.h>
+	<stdint.h>
+	<Windows.h>
+	<windows.h>
+	<TargetConditionals.h>
+	"stb_sprintf.h"
+	<Carbon/Carbon.h>
+	<imm.h>
+	"imgui_user.inl"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_guid.h"
+	"SDL_haptic.h"
+	"SDL_hidapi.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_metal.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"SDL_locale.h"
+	"SDL_misc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+	<winsdkver.h>
+	<sdkddkver.h>
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_platform.h
+	<AvailabilityMacros.h>
+	<TargetConditionals.h>
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\begin_code.h
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\close_code.h
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<sys/cpuinline.h>
+	<mbarrier.h>
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<endian.h>
+	<endian.h>
+	<sys/endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<arm_neon.h>
+	<altivec.h>
+	<arm_neon.h>
+	<armintr.h>
+	<arm_neon.h>
+	<arm64intr.h>
+	<arm64_neon.h>
+	<mm3dnow.h>
+	<lsxintrin.h>
+	<lasxintrin.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_guid.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_guid.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_hidapi.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_metal.h
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_locale.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_misc.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
+1672757753 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_syswm.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	<windows.h>
+	<Inspectable.h>
+	<X11/Xlib.h>
+	<X11/Xatom.h>
+	<directfb.h>
+	<UIKit/UIKit.h>
+	"SDL_egl.h"
+	<os2.h>
+	"begin_code.h"
+	"close_code.h"
+
+1672757752 c:\users\public\plugins\sdl2-2.26.2\i686-w64-mingw32\include\sdl2\sdl_egl.h
+	<psp2/types.h>
+	<EGL/egl.h>
+	<EGL/eglext.h>
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+	<windows.h>
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<kernel/image.h>
+
+1675519760 source:d:\Моя папка\программирование\sdl\apple.cpp
+	"Apple.h"
+
+1675519760 d:\Моя папка\программирование\sdl\apple.h
+	"Field.h"
+
+1675519760 d:\Моя папка\программирование\sdl\field.h
+	"Settings.h"
+	"MyTypes.h"
+	"Object.h"
+	"Bot.h"
+	"Apple.h"
+	"Rock.h"
+	"Organics.h"
+	"ObjectSaver.h"
+	"Chart.h"
+	"ImageFactory.h"
+
+1675519761 d:\Моя папка\программирование\sdl\settings.h
+
+1675519760 d:\Моя папка\программирование\sdl\mytypes.h
+	"Systems.h"
+
+1675519761 d:\Моя папка\программирование\sdl\systems.h
+	<fstream>
+	<thread>
+	<condition_variable>
+	<filesystem>
+	<vector>
+	"imgui.h"
+	"imgui_impl_sdl.h"
+	"imgui_impl_sdlrenderer.h"
+	"imgui_impl_opengl3.h"
+	"implot.h"
+	<SDL.h>
+	<SDL_opengl.h>
+
+1675519760 d:\Моя папка\программирование\sdl\imgui.h
+	"imconfig.h"
+	<float.h>
+	<stdarg.h>
+	<stddef.h>
+	<string.h>
+	<assert.h>
+	"imgui_user.h"
+
+1675519760 d:\Моя папка\программирование\sdl\imconfig.h
+
+1675519760 d:\Моя папка\программирование\sdl\imgui_impl_sdl.h
+	"imgui.h"
+
+1675519760 d:\Моя папка\программирование\sdl\imgui_impl_sdlrenderer.h
+	"imgui.h"
+
+1675519760 d:\Моя папка\программирование\sdl\imgui_impl_opengl3.h
+	"imgui.h"
+	<TargetConditionals.h>
+
+1675519760 d:\Моя папка\программирование\sdl\implot.h
+	"imgui.h"
+
+1675519760 d:\Моя папка\программирование\sdl\object.h
+	"Field.h"
+
+1677419272 d:\Моя папка\программирование\sdl\bot.h
+	"Field.h"
+	"BotNeuralNet.h"
+
+1675519760 d:\Моя папка\программирование\sdl\botneuralnet.h
+	"Neuron.h"
+
+1675519760 d:\Моя папка\программирование\sdl\neuron.h
+	"Settings.h"
+	"MyTypes.h"
+
+1675519760 d:\Моя папка\программирование\sdl\rock.h
+	"Field.h"
+
+1675519760 d:\Моя папка\программирование\sdl\organics.h
+	"Field.h"
+
+1675519760 d:\Моя папка\программирование\sdl\objectsaver.h
+	"Field.h"
+
+1675519760 d:\Моя папка\программирование\sdl\chart.h
+	"Settings.h"
+	"SDL.h"
+
+1675519760 d:\Моя папка\программирование\sdl\sdl.h
+	"Settings.h"
+	"MyTypes.h"
+
+1675519760 d:\Моя папка\программирование\sdl\imagefactory.h
+	"Field.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\automaticadaptation.cpp
+	"AutomaticAdaptation.h"
+
+1675519760 d:\Моя папка\программирование\sdl\automaticadaptation.h
+	"Main.h"
+
+1675519760 d:\Моя папка\программирование\sdl\main.h
+	"GUI.h"
+	"Field.h"
+	"NeuralNetRenderer.h"
+	"AutomaticAdaptation.h"
+
+1675519760 d:\Моя папка\программирование\sdl\gui.h
+	"SDL.h"
+	"Main.h"
+
+1675519760 d:\Моя папка\программирование\sdl\neuralnetrenderer.h
+	"BotNeuralNet.h"
+	"SDL.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\bot.cpp
+	"Bot.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\botneuralnet.cpp
+	"BotNeuralNet.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\chart.cpp
+	"Chart.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\field.cpp
+	"Field.h"
+
+1676180769 source:d:\Моя папка\программирование\sdl\gui.cpp
+	"GUI.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\imagefactory.cpp
+	"ImageFactory.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\imgui.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	<stdio.h>
+	<stddef.h>
+	<stdint.h>
+	<Windows.h>
+	<windows.h>
+	<TargetConditionals.h>
+	"stb_sprintf.h"
+	<Carbon/Carbon.h>
+	<imm.h>
+	"imgui_user.inl"
+
+1675519760 d:\Моя папка\программирование\sdl\imgui_internal.h
+	"imgui_internal.h"
+	"imgui.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<limits.h>
+	<immintrin.h>
+	"imstb_textedit.h"
+
+1675519760 d:\Моя папка\программирование\sdl\imstb_textedit.h
+	<string.h>
+
+1675519760 source:d:\Моя папка\программирование\sdl\imgui_demo.cpp
+	"imgui.h"
+	<ctype.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdint.h>
+
+1675519760 source:d:\Моя папка\программирование\sdl\imgui_draw.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	"misc/freetype/imgui_freetype.h"
+	<stdio.h>
+	"imstb_rectpack.h"
+	"imstb_truetype.h"
+
+1675519760 d:\Моя папка\программирование\sdl\imstb_rectpack.h
+	<stdlib.h>
+	<assert.h>
+
+1675519760 d:\Моя папка\программирование\sdl\imstb_truetype.h
+	"stb_truetype.h"
+	<stdio.h>
+	"stb_truetype.h"
+	<math.h>
+	<math.h>
+	<math.h>
+	<math.h>
+	<math.h>
+	<stdlib.h>
+	<assert.h>
+	<string.h>
+	<string.h>
+
+1675519760 source:d:\Моя папка\программирование\sdl\imgui_impl_opengl3.cpp
+	"imgui.h"
+	"imgui_impl_opengl3.h"
+	<stdio.h>
+	<stddef.h>
+	<stdint.h>
+	<TargetConditionals.h>
+	<OpenGLES/ES2/gl.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<OpenGLES/ES3/gl.h>
+	<GLES3/gl3.h>
+	"imgui_impl_opengl3_loader.h"
+	<stdio.h>
+
+1675519760 d:\Моя папка\программирование\sdl\imgui_impl_opengl3_loader.h
+	<stdint.h>
+	<windows.h>
+	<stdlib.h>
+	<windows.h>
+	<dlfcn.h>
+	<dlfcn.h>
+
+1675519760 source:d:\Моя папка\программирование\sdl\imgui_impl_sdl.cpp
+	"imgui.h"
+	"imgui_impl_sdl.h"
+	<SDL.h>
+	<SDL_syswm.h>
+	<TargetConditionals.h>
+
+1675519760 source:d:\Моя папка\программирование\sdl\imgui_impl_sdlrenderer.cpp
+	"imgui.h"
+	"imgui_impl_sdlrenderer.h"
+	<stddef.h>
+	<stdint.h>
+	<SDL.h>
+
+1675519760 source:d:\Моя папка\программирование\sdl\imgui_tables.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	<stddef.h>
+	<stdint.h>
+
+1675519760 source:d:\Моя папка\программирование\sdl\imgui_widgets.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	<stddef.h>
+	<stdint.h>
+	"imstb_textedit.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\implot.cpp
+	"implot.h"
+	"implot_internal.h"
+	<stdlib.h>
+
+1675519760 d:\Моя папка\программирование\sdl\implot_internal.h
+	<time.h>
+	"imgui_internal.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\implot_demo.cpp
+	"implot.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"implot_internal.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\implot_items.cpp
+	"implot.h"
+	"implot_internal.h"
+	<immintrin.h>
+
+1676180311 source:d:\Моя папка\программирование\sdl\main.cpp
+	"Main.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\mytypes.cpp
+	"MyTypes.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\neuralnetrenderer.cpp
+	"NeuralNetRenderer.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\neuron.cpp
+	"Neuron.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\object.cpp
+	"Bot.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\objectsaver.cpp
+	"Field.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\organics.cpp
+	"Organics.h"
+
+1675519760 source:d:\Моя папка\программирование\sdl\rock.cpp
+	"Rock.h"
+
+1676035900 source:d:\Моя папка\программирование\sdl\sdl.cpp
+	"SDL.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_guid.h"
+	"SDL_haptic.h"
+	"SDL_hidapi.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_metal.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"SDL_locale.h"
+	"SDL_misc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+	<winsdkver.h>
+	<sdkddkver.h>
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
+	<AvailabilityMacros.h>
+	<TargetConditionals.h>
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\begin_code.h
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\close_code.h
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<sys/cpuinline.h>
+	<mbarrier.h>
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<endian.h>
+	<endian.h>
+	<sys/endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580882 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<arm_neon.h>
+	<altivec.h>
+	<arm_neon.h>
+	<armintr.h>
+	<arm_neon.h>
+	<arm64intr.h>
+	<arm64_neon.h>
+	<mm3dnow.h>
+	<lsxintrin.h>
+	<lasxintrin.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_guid.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_guid.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_hidapi.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_metal.h
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_locale.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_misc.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
+1675580881 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_syswm.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	<windows.h>
+	<Inspectable.h>
+	<X11/Xlib.h>
+	<X11/Xatom.h>
+	<directfb.h>
+	<UIKit/UIKit.h>
+	"SDL_egl.h"
+	<os2.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\Моя папка\программирование\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_egl.h
+	<psp2/types.h>
+	<EGL/egl.h>
+	<EGL/eglext.h>
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+	<windows.h>
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<kernel/image.h>
+
+1675519760 source:d:\mydirectory\programming\sdl\apple.cpp
+	"Apple.h"
+
+1675519760 d:\mydirectory\programming\sdl\apple.h
+	"Field.h"
+
+1691307212 d:\mydirectory\programming\sdl\field.h
+	"GameObject.h"
+	<vector>
+	<map>
+	"zone.h"
+
+1692603689 d:\mydirectory\programming\sdl\settings.h
+	<iostream>
+	"window.h"
+	"dynamicdata.h"
+	"event.h"
+	<chrono>
+	<thread>
+	"neironnet.h"
+	"organism.h"
+	<stdlib.h>
+
+1675519760 d:\mydirectory\programming\sdl\mytypes.h
+	"Systems.h"
+
+1675519761 d:\mydirectory\programming\sdl\systems.h
+	<fstream>
+	<thread>
+	<condition_variable>
+	<filesystem>
+	<vector>
+	"imgui.h"
+	"imgui_impl_sdl.h"
+	"imgui_impl_sdlrenderer.h"
+	"imgui_impl_opengl3.h"
+	"implot.h"
+	<SDL.h>
+	<SDL_opengl.h>
+
+1675519760 d:\mydirectory\programming\sdl\imgui.h
+	"imconfig.h"
+	<float.h>
+	<stdarg.h>
+	<stddef.h>
+	<string.h>
+	<assert.h>
+	"imgui_user.h"
+
+1675519760 d:\mydirectory\programming\sdl\imconfig.h
+
+1675519760 d:\mydirectory\programming\sdl\imgui_impl_sdl.h
+	"imgui.h"
+
+1675519760 d:\mydirectory\programming\sdl\imgui_impl_sdlrenderer.h
+	"imgui.h"
+
+1675519760 d:\mydirectory\programming\sdl\imgui_impl_opengl3.h
+	"imgui.h"
+	<TargetConditionals.h>
+
+1675519760 d:\mydirectory\programming\sdl\implot.h
+	"imgui.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_guid.h"
+	"SDL_haptic.h"
+	"SDL_hidapi.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_metal.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"SDL_locale.h"
+	"SDL_misc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+	<winsdkver.h>
+	<sdkddkver.h>
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
+	<AvailabilityMacros.h>
+	<TargetConditionals.h>
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\begin_code.h
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\close_code.h
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<sys/cpuinline.h>
+	<mbarrier.h>
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<endian.h>
+	<endian.h>
+	<sys/endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580882 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<arm_neon.h>
+	<altivec.h>
+	<arm_neon.h>
+	<armintr.h>
+	<arm_neon.h>
+	<arm64intr.h>
+	<arm64_neon.h>
+	<mm3dnow.h>
+	<lsxintrin.h>
+	<lasxintrin.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_guid.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_guid.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_hidapi.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_metal.h
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_locale.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_misc.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
+1675519760 d:\mydirectory\programming\sdl\object.h
+	"Field.h"
+
+1678001128 d:\mydirectory\programming\sdl\bot.h
+	"Field.h"
+	"BotNeuralNet.h"
+
+1675519760 d:\mydirectory\programming\sdl\botneuralnet.h
+	"Neuron.h"
+
+1675519760 d:\mydirectory\programming\sdl\neuron.h
+	"Settings.h"
+	"MyTypes.h"
+
+1675519760 d:\mydirectory\programming\sdl\rock.h
+	"Field.h"
+
+1675519760 d:\mydirectory\programming\sdl\organics.h
+	"Field.h"
+
+1675519760 d:\mydirectory\programming\sdl\objectsaver.h
+	"Field.h"
+
+1675519760 d:\mydirectory\programming\sdl\chart.h
+	"Settings.h"
+	"SDL.h"
+
+1675519760 d:\mydirectory\programming\sdl\sdl.h
+	"Settings.h"
+	"MyTypes.h"
+
+1675519760 d:\mydirectory\programming\sdl\imagefactory.h
+	"Field.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\automaticadaptation.cpp
+	"AutomaticAdaptation.h"
+
+1675519760 d:\mydirectory\programming\sdl\automaticadaptation.h
+	"Main.h"
+
+1675519760 d:\mydirectory\programming\sdl\main.h
+	"GUI.h"
+	"Field.h"
+	"NeuralNetRenderer.h"
+	"AutomaticAdaptation.h"
+
+1675519760 d:\mydirectory\programming\sdl\gui.h
+	"SDL.h"
+	"Main.h"
+
+1675519760 d:\mydirectory\programming\sdl\neuralnetrenderer.h
+	"BotNeuralNet.h"
+	"SDL.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\botneuralnet.cpp
+	"BotNeuralNet.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\chart.cpp
+	"Chart.h"
+
+1691307766 source:d:\mydirectory\programming\sdl\field.cpp
+	"field.h"
+
+1676180769 source:d:\mydirectory\programming\sdl\gui.cpp
+	"GUI.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\imagefactory.cpp
+	"ImageFactory.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\imgui.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	<stdio.h>
+	<stddef.h>
+	<stdint.h>
+	<Windows.h>
+	<windows.h>
+	<TargetConditionals.h>
+	"stb_sprintf.h"
+	<Carbon/Carbon.h>
+	<imm.h>
+	"imgui_user.inl"
+
+1675519760 d:\mydirectory\programming\sdl\imgui_internal.h
+	"imgui_internal.h"
+	"imgui.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<limits.h>
+	<immintrin.h>
+	"imstb_textedit.h"
+
+1675519760 d:\mydirectory\programming\sdl\imstb_textedit.h
+	<string.h>
+
+1675519760 source:d:\mydirectory\programming\sdl\imgui_demo.cpp
+	"imgui.h"
+	<ctype.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdint.h>
+
+1675519760 source:d:\mydirectory\programming\sdl\imgui_draw.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	"misc/freetype/imgui_freetype.h"
+	<stdio.h>
+	"imstb_rectpack.h"
+	"imstb_truetype.h"
+
+1675519760 d:\mydirectory\programming\sdl\imstb_rectpack.h
+	<stdlib.h>
+	<assert.h>
+
+1675519760 d:\mydirectory\programming\sdl\imstb_truetype.h
+	"stb_truetype.h"
+	<stdio.h>
+	"stb_truetype.h"
+	<math.h>
+	<math.h>
+	<math.h>
+	<math.h>
+	<math.h>
+	<stdlib.h>
+	<assert.h>
+	<string.h>
+	<string.h>
+
+1675519760 source:d:\mydirectory\programming\sdl\imgui_impl_opengl3.cpp
+	"imgui.h"
+	"imgui_impl_opengl3.h"
+	<stdio.h>
+	<stddef.h>
+	<stdint.h>
+	<TargetConditionals.h>
+	<OpenGLES/ES2/gl.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<OpenGLES/ES3/gl.h>
+	<GLES3/gl3.h>
+	"imgui_impl_opengl3_loader.h"
+	<stdio.h>
+
+1675519760 d:\mydirectory\programming\sdl\imgui_impl_opengl3_loader.h
+	<stdint.h>
+	<windows.h>
+	<stdlib.h>
+	<windows.h>
+	<dlfcn.h>
+	<dlfcn.h>
+
+1675519760 source:d:\mydirectory\programming\sdl\imgui_impl_sdl.cpp
+	"imgui.h"
+	"imgui_impl_sdl.h"
+	<SDL.h>
+	<SDL_syswm.h>
+	<TargetConditionals.h>
+
+1675580881 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_syswm.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	<windows.h>
+	<Inspectable.h>
+	<X11/Xlib.h>
+	<X11/Xatom.h>
+	<directfb.h>
+	<UIKit/UIKit.h>
+	"SDL_egl.h"
+	<os2.h>
+	"begin_code.h"
+	"close_code.h"
+
+1675580880 d:\mydirectory\programming\sdl\sdl2-2.26.2\x86_64-w64-mingw32\include\sdl2\sdl_egl.h
+	<psp2/types.h>
+	<EGL/egl.h>
+	<EGL/eglext.h>
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+	<windows.h>
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<kernel/image.h>
+
+1675519760 source:d:\mydirectory\programming\sdl\imgui_impl_sdlrenderer.cpp
+	"imgui.h"
+	"imgui_impl_sdlrenderer.h"
+	<stddef.h>
+	<stdint.h>
+	<SDL.h>
+
+1675519760 source:d:\mydirectory\programming\sdl\imgui_tables.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	<stddef.h>
+	<stdint.h>
+
+1675519760 source:d:\mydirectory\programming\sdl\imgui_widgets.cpp
+	"imgui.h"
+	"imgui_internal.h"
+	<stddef.h>
+	<stdint.h>
+	"imstb_textedit.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\implot.cpp
+	"implot.h"
+	"implot_internal.h"
+	<stdlib.h>
+
+1675519760 d:\mydirectory\programming\sdl\implot_internal.h
+	<time.h>
+	"imgui_internal.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\implot_demo.cpp
+	"implot.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"implot_internal.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\implot_items.cpp
+	"implot.h"
+	"implot_internal.h"
+	<immintrin.h>
+
+1691422745 source:d:\mydirectory\programming\sdl\main.cpp
+	"Settings.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\mytypes.cpp
+	"MyTypes.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\neuralnetrenderer.cpp
+	"NeuralNetRenderer.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\neuron.cpp
+	"Neuron.h"
+
+1679834910 source:d:\mydirectory\programming\sdl\object.cpp
+	"GameObject.h"
+	"rect.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\objectsaver.cpp
+	"Field.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\organics.cpp
+	"Organics.h"
+
+1675519760 source:d:\mydirectory\programming\sdl\rock.cpp
+	"Rock.h"
+
+1676035900 source:d:\mydirectory\programming\sdl\sdl.cpp
+	"SDL.h"
+
+1678030080 source:d:\mydirectory\programming\sdl\bot.cpp
+	"Bot.h"
+
+1693393237 d:\mydirectory\programming\sdl\gameobject.h
+	"MyStructs.h"
+	"rect.h"
+	"dynamicdata.h"
+
+1686569056 d:\mydirectory\programming\sdl\rect.h
+
+1693392401 d:\mydirectory\programming\sdl\color.h
+
+1693393413 d:\mydirectory\programming\sdl\dynamicdata.h
+	<queue>
+	<map>
+	<vector>
+
+1692603878 source:d:\mydirectory\programming\sdl\color.cpp
+	"color.h"
+
+1692839132 source:d:\mydirectory\programming\sdl\dynamicdata.cpp
+	"dynamicdata.h"
+
+1678278971 source:d:\mydirectory\programming\sdl\event.cpp
+	"event.h"
+
+1693392670 d:\mydirectory\programming\sdl\event.h
+
+1691307663 source:d:\mydirectory\programming\sdl\gameobject.cpp
+	"GameObject.h"
+	"rect.h"
+
+1691316025 source:d:\mydirectory\programming\sdl\organism.cpp
+	"organism.h"
+
+1692603644 d:\mydirectory\programming\sdl\organism.h
+	"GameObject.h"
+	"Settings.h"
+
+1689506751 source:d:\mydirectory\programming\sdl\rect.cpp
+	"rect.h"
+
+1693393668 source:d:\mydirectory\programming\sdl\zone.cpp
+	"zone.h"
+
+1692839338 d:\mydirectory\programming\sdl\zone.h
+	"GameObject.h"
+	"dynamicdata.h"
+
+1691303302 d:\mydirectory\programming\sdl\window.h
+	<vector>
+	"GameObject.h"
+	"event.h"
+	"color.h"
+	<SDL.h>
+	<iostream>
+
+1691310317 source:d:\mydirectory\programming\sdl\window.cpp
+	"window.h"
+	<string>
+	<cmath>
+
+1691414875 source:d:\mydirectory\programming\sdl\neiron.cpp
+	"neiron.h"
+
+1691414779 d:\mydirectory\programming\sdl\neiron.h
+	<vector>
+
+1691422926 source:d:\mydirectory\programming\sdl\neironnet.cpp
+	"neironnet.h"
+
+1691422926 d:\mydirectory\programming\sdl\neironnet.h
+	<iostream>
+	<vector>
+	<cmath>
+	<cassert>
+	<ctime>
+	<cstdlib>
+	<functional>
+
+1693393280 d:\mydirectory\programming\sdl\mystructs.h
+
