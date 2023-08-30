@@ -2,8 +2,6 @@
 #define WINDOW_H
 #include <vector>
 #include "GameObject.h"
-#include "event.h"
-#include "color.h"
 #include <SDL.h>
 #include <iostream>
 

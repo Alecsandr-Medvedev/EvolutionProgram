@@ -12,7 +12,7 @@
 
 
 
-std::srand(time(NULL));
+
 Color color(40, 40, 40);
 Color color2(255, 255, 40);
 int countFrames = 100;
@@ -29,11 +29,11 @@ DynamicData dd;
 
 zone BaseSettings(100, 100, 100, WorldRect, dd);
 
-Field field(WorldWidth, WorldHeight, BaseSettings, dd);
+Field field(WorldWidth, WorldHeight, &BaseSettings, dd);
 
 double getRandNum(double minNum, double maxNum, double step){
     double num = std::rand();
-    num = int num % int ((maxNum - minNum) / step);
+    num = int (num) % (int ((maxNum - minNum) / step));
     num = num * step;
     num = num - minNum;
     return num;

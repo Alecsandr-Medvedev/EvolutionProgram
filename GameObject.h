@@ -1,6 +1,5 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
-#include "MyStructs.h"
 #include "rect.h"
 #include "dynamicdata.h"
 
@@ -16,13 +15,16 @@ class GameObject
         virtual ~GameObject();
         void interact(int inter);
 
+    protected:
+        int _interact;
+
+
     private:
         Rect _rect;
         Color _color;
         char _shape;
         int _id;
         DynamicData _dd;
-        int _interact;
 
 };
 

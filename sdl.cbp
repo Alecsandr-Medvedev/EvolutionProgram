@@ -42,13 +42,10 @@
 		</Compiler>
 		<Unit filename="GameObject.cpp" />
 		<Unit filename="GameObject.h" />
+		<Unit filename="MyStructs.h" />
 		<Unit filename="Settings.h" />
-		<Unit filename="color.cpp" />
-		<Unit filename="color.h" />
 		<Unit filename="dynamicdata.cpp" />
 		<Unit filename="dynamicdata.h" />
-		<Unit filename="event.cpp" />
-		<Unit filename="event.h" />
 		<Unit filename="field.cpp" />
 		<Unit filename="field.h" />
 		<Unit filename="main.cpp" />

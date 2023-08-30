@@ -1,6 +1,6 @@
 #include "organism.h"
 
-Organism::Organism(int sizeo, int growthRate, int pointPh, int pointPr, int maxSpeed, Rect rect, DynamicData dd, NeironNet &neironNetDo, NeironNet &neironNetGo) : GameObject(rect, 'c', Color(int(2.56 * pointPr), int(2.56 * pointPh), 256 - maxSpeed, 256 - growthRate), dd)
+Organism::Organism(int sizeo, int growthRate, int pointPh, int pointPr, int maxSpeed, Rect rect, DynamicData dd, NeironNet &neironNetDo, NeironNet &neironNetGo) : GameObject(rect, 'c', Color(int(2.56 * pointPr), int(2.56 * pointPh), 256 - maxSpeed, 256 - growthRate), dd), _neironNetDo(StandartNeiron1), _neironNetGo(StandartNeiron2, NeironNet::ActivationFunctionType::Tanh)
 {
     _energy = sizeo * sizeo;
     _size = sizeo;
@@ -16,7 +16,7 @@ Organism::Organism(int sizeo, int growthRate, int pointPh, int pointPr, int maxS
     _g3 = (256 - maxSpeed);
     _g4 = (256 - growthRate);
 
-    _gen = _g1 * 0x1000000 +_g2 * 0x10000 + _g3 * 0x100 + g4;
+    _gen = _g1 * 0x1000000 +_g2 * 0x10000 + _g3 * 0x100 + _g4;
 
 }
 
@@ -28,8 +28,10 @@ void Organism::update(){
 
 std::vector<std::vector<int>> Organism::detectOrganisms(int xCenter, int yCenter){
     int findZone = _size * kFind;
-    std::vector<int> idsFZ = field.getOrganismes(Rect rect(xCenter + findZone, yCenter + findZone, findZone * 2, FindZone * 2));
-    std::vector<int> idsNear = field.getOrganismes(Rect rect(getRect()));
+    Rect rect(xCenter + findZone, yCenter + findZone, findZone * 2, findZone * 2);
+    std::vector<int> idsFZ = field.getOrganismes(rect);
+    Rect r(getRect());
+    std::vector<int> idsNear = field.getOrganismes(r);
     for (int num : idsNear) {
         idsFZ.erase(std::remove(idsFZ.begin(), idsFZ.end(), num), idsFZ.end());
     }
@@ -39,7 +41,7 @@ std::vector<std::vector<int>> Organism::detectOrganisms(int xCenter, int yCenter
         if(compareGens(dd.getIdGen(el))){
             idsFZ_f.push_back(el);
         }
-        idsFz_e.push_back(el);
+        idsFZ_e.push_back(el);
     }
     for (int el : idsNear){
         if(compareGens(dd.getIdGen(el))){
@@ -67,16 +69,13 @@ bool Organism::compareGens(int gen){
 }
 
 int* Organism::detectZone(int xCenter, int yCenter){
-
-    int z[3] = field.getSettings(xCenter, yCenter).getAll();
-
-    return z;
+    return field.getSettings(xCenter, yCenter).getAll();
 }
 
 void Organism::think(){
     Rect r = getRect();
     int xCenter = r.x() + (r.width() / 2), yCenter = r.y() + (r.width() / 2);
-    int resZone[3] = detectZone(xCenter, yCenter);
+    int* resZone = detectZone(xCenter, yCenter);
     std::vector<std::vector<int>> findedOrganisms = detectOrganisms(xCenter, yCenter);
     std::vector<double> input = {findedOrganisms[0].size(), findedOrganisms[1].size(), findedOrganisms[2].size(), findedOrganisms[3].size(), resZone[0],
     resZone[1], resZone[2]};
@@ -124,8 +123,8 @@ void Organism::multiply(int gen){
     NeironNetGo.Mutate(kMutate / 10.0, 0.1);
     BornData data;
     data.gen = newGen;
-    data.initial_weights_1 = NeironNetDo.printWeights();
-    data.initial_weights_2 = NeironNetGo.printWeights();
+    data.initial_weights_1 = *NeironNetDo.printWeights();
+    data.initial_weights_2 = *NeironNetGo.printWeights();
 
     dd.addBorn(data);
 }
@@ -174,3 +173,8 @@ Organism::~Organism()
 {
     //dtor
 }
+
+bool Organism::IsAlive(){
+    return isAlive;
+}
+

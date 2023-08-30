@@ -3,13 +3,7 @@
 #include <queue>
 #include <map>
 #include <vector>
-
-struct BornData{
-    int gen;
-    std::vector<std::vector<std::vector<double>>>& initial_weights_1;
-    std::vector<std::vector<std::vector<double>>>& initial_weights_2;
-
-};
+#include "MyStructs.h"
 
 
 class DynamicData

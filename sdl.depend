@@ -1882,21 +1882,21 @@
 1675519760 d:\mydirectory\programming\sdl\apple.h
 	"Field.h"
 
-1691307212 d:\mydirectory\programming\sdl\field.h
+1692839285 d:\mydirectory\programming\sdl\field.h
 	"GameObject.h"
 	<vector>
 	<map>
 	"zone.h"
 
-1692603689 d:\mydirectory\programming\sdl\settings.h
+1693397363 d:\mydirectory\programming\sdl\settings.h
 	<iostream>
 	"window.h"
 	"dynamicdata.h"
-	"event.h"
 	<chrono>
 	<thread>
+	<time.h>
 	"neironnet.h"
-	"organism.h"
+	"field.h"
 	<stdlib.h>
 
 1675519760 d:\mydirectory\programming\sdl\mytypes.h
@@ -2401,7 +2401,7 @@
 1675519760 source:d:\mydirectory\programming\sdl\chart.cpp
 	"Chart.h"
 
-1691307766 source:d:\mydirectory\programming\sdl\field.cpp
+1693394460 source:d:\mydirectory\programming\sdl\field.cpp
 	"field.h"
 
 1676180769 source:d:\mydirectory\programming\sdl\gui.cpp
@@ -2573,8 +2573,8 @@
 	"implot_internal.h"
 	<immintrin.h>
 
-1691422745 source:d:\mydirectory\programming\sdl\main.cpp
-	"Settings.h"
+1693404591 source:d:\mydirectory\programming\sdl\main.cpp
+	"organism.h"
 
 1675519760 source:d:\mydirectory\programming\sdl\mytypes.cpp
 	"MyTypes.h"
@@ -2604,8 +2604,7 @@
 1678030080 source:d:\mydirectory\programming\sdl\bot.cpp
 	"Bot.h"
 
-1693393237 d:\mydirectory\programming\sdl\gameobject.h
-	"MyStructs.h"
+1693405919 d:\mydirectory\programming\sdl\gameobject.h
 	"rect.h"
 	"dynamicdata.h"
 
@@ -2613,10 +2612,11 @@
 
 1693392401 d:\mydirectory\programming\sdl\color.h
 
-1693393413 d:\mydirectory\programming\sdl\dynamicdata.h
+1693397571 d:\mydirectory\programming\sdl\dynamicdata.h
 	<queue>
 	<map>
 	<vector>
+	"MyStructs.h"
 
 1692603878 source:d:\mydirectory\programming\sdl\color.cpp
 	"color.h"
@@ -2629,14 +2629,14 @@
 
 1693392670 d:\mydirectory\programming\sdl\event.h
 
-1691307663 source:d:\mydirectory\programming\sdl\gameobject.cpp
+1692699608 source:d:\mydirectory\programming\sdl\gameobject.cpp
 	"GameObject.h"
 	"rect.h"
 
 1691316025 source:d:\mydirectory\programming\sdl\organism.cpp
 	"organism.h"
 
-1692603644 d:\mydirectory\programming\sdl\organism.h
+1693404031 d:\mydirectory\programming\sdl\organism.h
 	"GameObject.h"
 	"Settings.h"
 
@@ -2650,11 +2650,9 @@
 	"GameObject.h"
 	"dynamicdata.h"
 
-1691303302 d:\mydirectory\programming\sdl\window.h
+1693396909 d:\mydirectory\programming\sdl\window.h
 	<vector>
 	"GameObject.h"
-	"event.h"
-	"color.h"
 	<SDL.h>
 	<iostream>
 
@@ -2681,5 +2679,9 @@
 	<cstdlib>
 	<functional>
 
-1693393280 d:\mydirectory\programming\sdl\mystructs.h
+1693397624 d:\mydirectory\programming\sdl\mystructs.h
+	<vector>
+
+1693397545 d:\mydirectory\programming\sdl\\mystructs.h
+	<vector>
 

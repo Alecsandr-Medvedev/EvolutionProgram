@@ -12,6 +12,7 @@ class Organism : public GameObject
         virtual ~Organism();
         void update();
         void die();
+        bool IsAlive();
 
 
 
