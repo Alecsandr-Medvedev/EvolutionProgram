@@ -7,7 +7,7 @@ class Rect
         Rect(int x, int y, int width, int height);
         int x();
         int y();
-        int *posittion();
+        int *position();
         int width();
         int height();
         int *Size();

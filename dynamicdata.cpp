@@ -21,7 +21,9 @@ void DynamicData::addFreeId(int id){
     freeIds.push(id);
 }
 
-void DynamicData::setIdGen(int id, int gen){
+void DynamicData::setIdGen(int id, long long int gen){
+//    std::cout << id << "-" << gen << ";";
+
     IdGens[id] = gen;
 
 }
@@ -30,6 +32,7 @@ void DynamicData::delIdGen(int id){
 
 }
 int DynamicData::getIdGen(int id){
+//    std::cout << IdGens[id] << " ";
     return IdGens[id];
 
 }
@@ -43,6 +46,19 @@ std::vector<BornData> DynamicData::getBorns(){
     std::copy(_bornData.begin(), _bornData.end(), back_inserter(data));
     _bornData.clear();
     return data;
+}
+
+void DynamicData::addBornTree(std::vector<long long int> bornTree){
+    _bornTree.push_back(bornTree);
+}
+
+void DynamicData::writeBornTree(){
+    std::ofstream out;
+    out.open("bornTree.txt");
+    for (std::vector<long long int> els : _bornTree){
+        out << els[0] << ";" << els[1] << ";" << els[2] << ";" << els[3] << ";" << els[4] << ";" << els[5] << "\n";
+    }
+    out.close();
 }
 
 DynamicData::~DynamicData()

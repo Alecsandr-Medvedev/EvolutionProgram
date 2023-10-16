@@ -1,13 +1,14 @@
 #include "GameObject.h"
 #include "rect.h"
 
-GameObject::GameObject(Rect rect, char shape, Color color, DynamicData dd) : _color(139, 0, 255), _rect(0, 0, 0, 0)
+GameObject::GameObject(Rect rect, char shape, Color color, DynamicData *dd) : _color(139, 0, 255), _rect(0, 0, 0, 0)
 {
     _rect = rect;
     _shape = shape;
     _color = color;
     _dd = dd;
-    _id = _dd.getFreeId();
+    _id = _dd->getFreeId();
+
 
 }
 
@@ -23,13 +24,14 @@ Color GameObject::getColor(){
  return _color;
 }
 
-int GameObject::getID(){
+int GameObject::getID() const{
  return _id;
 }
 
 GameObject::~GameObject()
 {
-    _dd.addFreeId(_id);
+
+    _dd->addFreeId(_id);
 }
 
 void GameObject::Move(int x, int y){
@@ -39,4 +41,11 @@ void GameObject::Move(int x, int y){
 void GameObject::interact(int inter){
     _interact = inter;
 }
+
+void GameObject::setSize(int width, int height){
+    _rect.setSize(width, height);
+
+}
+
+
 

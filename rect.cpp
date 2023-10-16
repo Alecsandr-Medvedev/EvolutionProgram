@@ -33,13 +33,18 @@ int *Rect::Size(){
     return _size;
 }
 
-int *Rect::posittion(){
+int *Rect::position(){
     return _position;
 }
 
 bool Rect::isIntersection(Rect rect){
-    if (_x + _width < rect.x() || rect.x() + rect.width() < _x ||
-        _y + _height < rect.y() || rect.y() + rect.height() < _y) {
+    int x_m, y_m, x_e, y_e;
+    x_m = _x - (_width / 2);
+    y_m = _y - (_height / 2);
+    x_e = rect.x() - (rect.width() / 2);
+    y_e = rect.y() - (rect.height() / 2);
+    if (x_m + _width < x_e || x_e + rect.width() < x_m ||
+        y_m + _height < y_e || y_e + rect.height() < y_m) {
         return false;
     }
 

@@ -39,20 +39,19 @@ window::window(Color backgroundColor) : _backgroundColor(0, 0, 0)
 
 }
 
-void window::update(std::vector<GameObject> objs){
-
-    draw(objs);
-}
-
-void window::draw(std::vector<GameObject> objs){
+void window::update(std::vector<GameObject*> objs){
     SDL_SetRenderDrawColor(renderer, _backgroundColor.r(), _backgroundColor.g(), _backgroundColor.b(), _backgroundColor.a());
     SDL_RenderClear(renderer);
 
-    for (GameObject obj : objs){
+    for (GameObject* obj : objs){
         drawObject(obj);
     }
     SDL_RenderPresent(renderer);
 }
+
+
+void window::draw(std::vector<GameObject*> objs){}
+
 
 std::vector<Event> window::getEvents(){
     events.clear();
@@ -76,39 +75,116 @@ std::vector<Event> window::getEvents(){
 
 void window::drawRect(Rect rect){
     SDL_Rect r;
-    r.x = rect.x();
-    r.y = rect.y();
+    r.x = rect.x() - (rect.width() / 2);
+    r.y = rect.y() - (rect.height() / 2);
     r.w = rect.width();
     r.h = rect.height();
     SDL_RenderFillRect(renderer, &r);
 }
 
 void window::drawCircle(Rect rect){
-    for (int w = 0; w < rect.width() * 2; ++w)
-    {
-        for (int h = 0; h < rect.height() * 2; ++h)
-        {
-            int dx = rect.width() - w;
-            int dy = rect.height() - h;
+    int offsetx, offsety, d, x, y, radius;
+    int status;
 
-            if (sqrt(dx * dx + dy * dy) <= rect.height() / 2)
-            {
-                SDL_RenderDrawPoint(renderer, rect.x() + dx + rect.width() / 2, rect.y() + dy + rect.height() / 2);
+     offsetx = 0;
+     offsety = rect.height() / 2;
+     d = (rect.height() / 2) -1;
+     status = 0;
+     x = rect.x();
+     y = rect.y();
+     radius = rect.height() / 2;
+
+
+    while (offsety >= offsetx) {
+             status += SDL_RenderDrawPoint(renderer, x + offsetx, y + offsety);
+             status += SDL_RenderDrawPoint(renderer, x + offsety, y + offsetx);
+             status += SDL_RenderDrawPoint(renderer, x - offsetx, y + offsety);
+             status += SDL_RenderDrawPoint(renderer, x - offsety, y + offsetx);
+             status += SDL_RenderDrawPoint(renderer, x + offsetx, y - offsety);
+             status += SDL_RenderDrawPoint(renderer, x + offsety, y - offsetx);
+             status += SDL_RenderDrawPoint(renderer, x - offsetx, y - offsety);
+             status += SDL_RenderDrawPoint(renderer, x - offsety, y - offsetx);
+
+            if (status < 0) {
+                    status = -1;
+                    break;
+                }
+
+            if (d >= 2*offsetx) {
+                    d -= 2*offsetx + 1;
+                    offsetx +=1;
+                }
+            else if (d < 2 * (radius - offsety)) {
+                    d += 2 * offsety - 1;
+                    offsety -= 1;
+                }
+            else {
+                    d += 2 * (offsety - offsetx - 1);
+                    offsety -= 1;
+                    offsetx += 1;
+                }
             }
-        }
-    }
+
 }
 
-void window::drawObject(GameObject obj){
+void window::drawFillCircle(Rect rect){
+    int offsetx, offsety, d, x, y, radius;
+    int status;
 
-    Color c = obj.getColor();
+
+    offsetx = 0;
+    offsety = rect.height() / 2;
+    d = (rect.height() / 2) -1;
+    status = 0;
+    x = rect.x();
+    y = rect.y();
+    radius = rect.height() / 2;
+
+    while (offsety >= offsetx) {
+
+        status += SDL_RenderDrawLine(renderer, x - offsety, y + offsetx,
+                                     x + offsety, y + offsetx);
+        status += SDL_RenderDrawLine(renderer, x - offsetx, y + offsety,
+                                     x + offsetx, y + offsety);
+        status += SDL_RenderDrawLine(renderer, x - offsetx, y - offsety,
+                                     x + offsetx, y - offsety);
+        status += SDL_RenderDrawLine(renderer, x - offsety, y - offsetx,
+                                     x + offsety, y - offsetx);
+
+        if (status < 0) {
+            status = -1;
+            break;
+        }
+
+        if (d >= 2*offsetx) {
+            d -= 2*offsetx + 1;
+            offsetx +=1;
+        }
+        else if (d < 2 * (radius - offsety)) {
+            d += 2 * offsety - 1;
+            offsety -= 1;
+        }
+        else {
+            d += 2 * (offsety - offsetx - 1);
+            offsety -= 1;
+            offsetx += 1;
+        }
+    }
+
+}
+
+void window::drawObject(GameObject *obj){
+    Color c = obj->getColor();
     SDL_SetRenderDrawColor(renderer, c.r(), c.g(), c.b(), c.a());
-    char type = obj.getType();
+    char type = obj->getType();
     if (type == 'r'){
-        drawRect(obj.getRect());
+        drawRect(obj->getRect());
     }
     else if (type == 'c'){
-        drawCircle(obj.getRect());
+        drawCircle(obj->getRect());
+    }
+    else if (type == 'C'){
+        drawFillCircle(obj->getRect());
     }
 }
 

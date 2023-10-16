@@ -35,7 +35,7 @@ class NeironNet
         std::vector<std::vector<double>> _activations;
         std::function<double(double)> _activation_function;
 
-        double getRandomWeight();
+        double getRandomWeight(int seed = -1);
         bool shouldMutate(double mutation_chance);
         double getRandomMutation(double max_mutation_amount);
 

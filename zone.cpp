@@ -1,6 +1,6 @@
 #include "zone.h"
 
-zone::zone(int temperature, int viscosity, int illumination, Rect rect, DynamicData dd) : GameObject(rect, 'r', Color(0, 0, 0), dd)
+zone::zone(int temperature, int viscosity, int illumination, Rect rect, DynamicData *dd) : GameObject(rect, 'r', Color(0, 0, 0), dd)
 {
     _temperature = temperature;
     _viscosity = viscosity;
@@ -27,5 +27,4 @@ int* zone::getAll(){
 }
 zone::~zone()
 {
-    //dtor
 }

@@ -1,15 +1,15 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 #include <vector>
-#include "GameObject.h"
 #include <SDL.h>
 #include <iostream>
+#include "GameObject.h"
 
 class window
 {
     public:
         window(Color backgroundColor);
-        void update(std::vector<GameObject> objs);
+        void update(std::vector<GameObject*> objs);
 
 
         std::vector<Event> getEvents();
@@ -27,8 +27,9 @@ class window
         SDL_Renderer* renderer;
         void drawCircle(Rect rect);
         void drawRect(Rect rect);
-        void drawObject(GameObject obj);
-        void draw(std::vector<GameObject> objs);
+        void drawObject(GameObject* obj);
+        void draw(std::vector<GameObject*> objs);
+        void drawFillCircle(Rect rect);
         Color _backgroundColor;
 
 };

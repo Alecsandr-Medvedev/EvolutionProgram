@@ -1,12 +1,11 @@
 #ifndef ZONE_H
 #define ZONE_H
 #include "GameObject.h"
-#include "dynamicdata.h"
 
 class zone : public GameObject
 {
     public:
-        zone(int temperature, int viscosity, int illumination, Rect rect, DynamicData dd);
+        zone(int temperature, int viscosity, int illumination, Rect rect, DynamicData *dd);
         virtual ~zone();
         int getTemperature();
         int getViscosity();

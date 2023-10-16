@@ -4,8 +4,6 @@ NeironNet::NeironNet(const std::vector<int>& layer_sizes, ActivationFunctionType
         assert(layer_sizes.size() >= 2);
         assert(layer_sizes.size() == initial_weights.size() + 1 || !initial_weights.size());
 
-        std::srand(std::time(0));
-
         // Устанавливаем функцию активации в соответствии с выбранным типом
         setActivationFunction(activation_function_type);
 
@@ -101,7 +99,11 @@ std::vector<std::vector<std::vector<double>>> NeironNet::printWeights() const{
     return _weights;
 }
 
-double NeironNet::getRandomWeight() {
+double NeironNet::getRandomWeight(int seed) {
+        if (seed != -1){
+            std::srand(seed);
+        }
+
         return (2.0 * std::rand() / RAND_MAX) - 1.0;
     }
 

@@ -1,4 +1,5 @@
 #include <vector>
+#include <iostream>
 
 struct Color{
     public:
@@ -24,6 +25,10 @@ struct Color{
         }
         int a() const {
             return _a;
+        }
+        int rgba(){
+//            std::cout << (_r * 0x1000000) + (_g * 0x10000) + (_b * 0x100) + _a << "-";
+            return (_r * 0x1000000) + (_g * 0x10000) + (_b * 0x100) + _a;
         }
     private:
         int _r, _g, _b,_a;
@@ -56,8 +61,10 @@ struct Event{
 };
 
 struct BornData{
-    int gen;
-    std::vector<std::vector<std::vector<double>>>* initial_weights_1;
-    std::vector<std::vector<std::vector<double>>>* initial_weights_2;
+    int x, y, s;
+    long long int gen;
+    std::vector<std::vector<std::vector<double>>> initial_weights_1;
+    std::vector<std::vector<std::vector<double>>> initial_weights_2;
+    std::vector<long long int> forBornTree;
 
 };
