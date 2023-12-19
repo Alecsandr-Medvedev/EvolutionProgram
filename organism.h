@@ -19,9 +19,9 @@ class Organism : public GameObject
 
     private:
         double _energy, _size, _growthRate, _pointPh, _pointPr, _maxSpeed;
-        int _g1, _g2, _g3, _g4;
-        long long int _gen;
         bool isAlive = true;
+
+        Genom _gen;
 
         NeironNet* _neironNetDo;
         NeironNet* _neironNetGo;
@@ -30,11 +30,12 @@ class Organism : public GameObject
         void think();
         zone* detectZone(int xCenter, int yCenter);
         std::vector<std::vector<int>> detectOrganisms(int xCenter, int yCenter);
-        bool compareGens(long long int gen);
+        bool compareGens(Genom gen);
         void multiply(int id);
-        void photosynthesize(int illumination);
+        void photosynthesize(int illumination, int countNeighbo);
         void attack(int id);
         void go(std::vector<int> idsFrend, std::vector<int> idsEnemy);
+        void inField();
 
 };
 

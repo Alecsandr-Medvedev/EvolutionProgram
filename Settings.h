@@ -14,9 +14,9 @@ extern int countTicks;
 extern int FPS;
 extern int TPS;
 extern std::vector<int> StandartNeiron1, StandartNeiron2;
-extern double kEnergyGrow, kMutate, kPhotosintes, kPredotor, kGo, deltMutate, kMultiply;
-extern int kFind, kEnemy;
-extern int WorldWidth, WorldHeight;
+extern double kEnergyGrow, kMutate, kPhotosintes, kPredotor, kGo, deltMutate, kMultiply, kBornEnergy, kGrow;
+extern int kFind, kEnemy, kMaxNeighbour;
+extern int WorldWidth, WorldHeight, year;
 extern Rect WorldRect;
 
 extern DynamicData dd;

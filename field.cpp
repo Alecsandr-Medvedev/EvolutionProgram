@@ -11,7 +11,12 @@ void Field::addOrganism(GameObject* org){
 }
 
 void Field::addZone(zone* Zone){
+    _zonesObjects.push_back(Zone);
     _zones.push_back(Zone);
+}
+
+std::vector<GameObject*> Field::getZonesObjects(){
+    return _zonesObjects;
 }
 
 std::vector<int> Field::getOrganismes(Rect fieldView){

@@ -40,31 +40,38 @@ double NeironNet::activationFunction(double x) {
     }
 
 std::vector<double> NeironNet::forward(const std::vector<double>& input) {
-        assert(input.size() == _activations[0].size());
 
-        // Копируем вход в активации входного слоя
-        for (size_t i = 0; i < input.size(); ++i) {
-            _activations[0][i] = input[i];
-        }
-
-        // Вычисляем активации для каждого слоя
-        for (size_t i = 1; i < _activations.size(); ++i) {
-            const auto& prev_layer = _activations[i - 1];
-            auto& current_layer = _activations[i];
-            auto& current_weights = _weights[i - 1];
-            auto& current_biases = _biases[i - 1];
-
-            for (size_t j = 0; j < current_layer.size(); ++j) {
-                double sum = 0.0;
-                for (size_t k = 0; k < prev_layer.size(); ++k) {
-                    sum += current_weights[j][k] * prev_layer[k];
-                }
-                sum += current_biases[j];
-                current_layer[j] = activationFunction(sum);
+        if (input.size() == _activations[0].size()){
+            // Копируем вход в активации входного слоя
+            for (size_t i = 0; i < input.size(); ++i) {
+                _activations[0][i] = input[i];
             }
+
+            // Вычисляем активации для каждого слоя
+            for (size_t i = 1; i < _activations.size(); ++i) {
+                const auto& prev_layer = _activations[i - 1];
+                auto& current_layer = _activations[i];
+                auto& current_weights = _weights[i - 1];
+                auto& current_biases = _biases[i - 1];
+
+                for (size_t j = 0; j < current_layer.size(); ++j) {
+                    double sum = 0.0;
+                    for (size_t k = 0; k < prev_layer.size(); ++k) {
+                        sum += current_weights[j][k] * prev_layer[k];
+                    }
+                    sum += current_biases[j];
+                    current_layer[j] = activationFunction(sum);
+                }
+            }
+
+            return _activations.back();
+        }
+        else{
+            std::cout << input.size() << " " << _activations[0].size() << "\n";
+            assert(input.size() == _activations[0].size());
         }
 
-        return _activations.back();
+
     }
 
 void NeironNet::Mutate(double mutation_chance, double max_mutation_amount) {

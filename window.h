@@ -9,8 +9,9 @@ class window
 {
     public:
         window(Color backgroundColor);
-        void update(std::vector<GameObject*> objs);
-
+        void update();
+        void draw(std::vector<GameObject*> objs);
+        void startDraw();
 
         std::vector<Event> getEvents();
         void close();
@@ -28,7 +29,7 @@ class window
         void drawCircle(Rect rect);
         void drawRect(Rect rect);
         void drawObject(GameObject* obj);
-        void draw(std::vector<GameObject*> objs);
+
         void drawFillCircle(Rect rect);
         Color _backgroundColor;
 

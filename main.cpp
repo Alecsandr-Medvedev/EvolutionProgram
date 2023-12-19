@@ -8,10 +8,12 @@ window win(backgroundColor);
 std::vector<Organism*> gos;
 std::mutex gos_mutex;
 std::vector<GameObject*> fos;
+//std::vector<GameObject*> f = {};
 
 std::mutex fos_mutex;
 
 std::vector<GameObject*> copy_fos;
+ int orgs_count = 0;
 
 void spawn(int count_kinds, int count_org, bool isGen = false, BornData db = BornData() ){
     std::srand(time(NULL));
@@ -19,38 +21,48 @@ void spawn(int count_kinds, int count_org, bool isGen = false, BornData db = Bor
 
         double s, x, y, pr, ph, gR, mS, idP1, idP2, gP1, gP2;
         long long int gen = 0;
+        Genom genom;
         std::vector<std::vector<std::vector<double>>> in_w1 = {}, in_w2 = {};
         std::vector<long long int> forBorn = {};
 
         if (isGen){
-            gen = db.gen;
-            pr = int ((db.gen / 0x10000000) / 2.56);
-            ph = int (((db.gen - pr) / 0x100000) / 2.56);
-            gR = (256 - (db.gen % 0x100));
-            mS = 256 - (db.gen % 0x10000 - gR);
-            gR = gR / 100;
+            genom = db.gen;
+            gen = db.gen.convertToColor();
+            pr = db.gen.pointPr;
+            ph = db.gen.pointPh;
+            gR = db.gen.growthRate;
+            mS = db.gen.maxSpeed;
+
             s = db.s;
             x = db.x;
             y = db.y;
-            in_w1 = db.initial_weights_1;
-            in_w2 = db.initial_weights_2;
+            in_w1 = db.gen.initial_weights_1;
+            in_w2 = db.gen.initial_weights_2;
             forBorn = db.forBornTree;
+
+            forBorn.push_back(0);
             forBorn.push_back(0);
 
         }
         else{
             forBorn = {-1, 0, -2, 0, 0, -3};
-             s = std::rand() % 20 + 10;
-             x = std::rand() % WorldWidth;
-             y = std::rand() % WorldHeight;
+            s = std::rand() % 20 + 10;
+            x = std::rand() % WorldWidth;
+            y = std::rand() % WorldHeight;
 
-             ph = std::rand() % 100;
-             pr = 100 - ph;
-             gR = (std::rand() % 3 + 1) / 10.;
-             mS = std::rand() % 10;
-             gen = pr * 0x1000000 + ph * 0x10000 + mS * 0x100 + gR;
+            ph = std::rand() % 256;
+            pr = 255 - ph;
+            gR = (std::rand() % 255 + 1) / 100.;
+            mS = (std::rand() % 256) / 100.;
+
+            genom.pointPh = ph;
+            genom.pointPr = pr;
+            genom.growthRate = gR;
+            genom.maxSpeed = mS;
+
+            gen = genom.convertToColor();
+
         }
-
         for (int j = 0; j < count_org; j++){
             NeironNet* NeironNetDo = new NeironNet(StandartNeiron1, NeironNet::ActivationFunctionType::Sigmoid, in_w1);
             NeironNet* NeironNetGo = new NeironNet(StandartNeiron2, NeironNet::ActivationFunctionType::Tanh, in_w2);
@@ -61,9 +73,10 @@ void spawn(int count_kinds, int count_org, bool isGen = false, BornData db = Bor
 
             Organism* go = new Organism(s, gR, ph, pr, mS, r, &dd, NeironNetDo, NeironNetGo);
             int id = go->getID();
-            dd.setIdGen(id, gen);
+            dd.setIdGen(id, genom);
             forBorn[4] = id;
             forBorn[5] = gen;
+
             dd.addBornTree(forBorn);
 
             field.addOrganism(go);
@@ -77,42 +90,52 @@ void spawn(int count_kinds, int count_org, bool isGen = false, BornData db = Bor
 
 void tickUpdate(){
     while (dd.isPlay){
-//        auto point_0 = std::chrono::high_resolution_clock::now();
-        std::cout << gos.size() << "\n";
-        if (gos.size() == 0){
+    {
+        std::lock_guard<std::mutex> guard(fos_mutex);
+//        std::cout << "\n" << gos.size() << "\n";
+//    auto start_time = std::chrono::steady_clock::now();
+
+
+
+        orgs_count = gos.size();
+        if (orgs_count == 0){
             dd.isPlay = false;
         }
-//        auto point_1 = std::chrono::high_resolution_clock::now();
-        {
-        std::lock_guard<std::mutex> guard(fos_mutex);
-        for (int i = 0; i < gos.size(); i++){
+
+
+        int count_die = 0;
+        for (int i = 0; i < orgs_count; i++){
             gos[i]->update();
             if (!gos[i]->IsAlive()){
-                int id = gos[i]->getID();
-                field.delOrganism(id);
-                dd.delIdGen(id);
-                gos[i] = nullptr;
-                fos[i] = nullptr;
-
+                    count_die++;
+                    int id = gos[i]->getID();
+                    field.delOrganism(id);
+                    dd.delIdGen(id);
+                    gos[i] = nullptr;
+                    fos[i] = nullptr;
             }
         }
+//        std::cout << count_die << "\t";
+        {
         fos.erase(std::remove(fos.begin(), fos.end(), nullptr), fos.end());
         gos.erase(std::remove(gos.begin(), gos.end(), nullptr), gos.end());
-//        auto point_2 = std::chrono::high_resolution_clock::now();
+        }
 
         std::vector<BornData> dbs = dd.getBorns();
-
+        int count_born = 0;
         for (BornData db : dbs){
+            count_born++;
             spawn(1, 1, true, db);
+
         }
-        }
-//        auto point_3 = std::chrono::high_resolution_clock::now();
-//        auto duration_1 = std::chrono::duration_cast<std::chrono::microseconds>(point_1 - point_0);
-//        auto duration_2 = std::chrono::duration_cast<std::chrono::microseconds>(point_2 - point_1);
-//        auto duration_3 = std::chrono::duration_cast<std::chrono::microseconds>(point_3 - point_2);
-//        auto duration_4 = std::chrono::duration_cast<std::chrono::microseconds>(point_1 - point_0);
-//        std::cout << duration_1.count() << " " << duration_2.count() << " " << duration_3.count() << std::endl;
+//        std::cout << count_born << "\t";
+    }
         std::this_thread::sleep_for(std::chrono::milliseconds(TPS));
+//        auto end_time = std::chrono::steady_clock::now();
+//        auto elapsed_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time);
+//
+//        std::cout << elapsed_ns.count() << " ns\n";
+        year++;
     }
     dd.writeBornTree();
 
@@ -122,6 +145,7 @@ void frameUpdate(){
 
     std::vector<Event> evs;
     while (dd.isPlay){
+
         evs = win.getEvents();
         for (Event ev : evs){
             if (ev.getType() == 'q'){
@@ -130,7 +154,11 @@ void frameUpdate(){
         }
         {
             std::lock_guard<std::mutex> guard(fos_mutex);
-            win.update(fos);
+            win.startDraw();
+            win.draw(fos);
+            win.draw(field.getZonesObjects());
+            win.update();
+
         }
         std::this_thread::sleep_for(std::chrono::milliseconds(FPS));
 
@@ -139,19 +167,55 @@ void frameUpdate(){
     win.close();
 }
 
+void createZones(int count_zones){
+    for (int i = 0; i < count_zones; i++){
+        int x = getRandNum(1, WorldWidth - 1, 1);
+        int y = getRandNum(1, WorldHeight - 1, 1);
+        int t = getRandNum(0, 100, 1), v = getRandNum(0, 100, 1), il = getRandNum(0, 100, 1);
+        Rect r(x, y, getRandNum(x, WorldWidth , 1), getRandNum(y, WorldHeight, 1));
+        zone z(t, v, il, r, &dd);
+        field.addZone(&z);
+    }
+}
 
 
 int main(int argv, char** args){
 
+//    dd.isPlay = true;
+//    spawn(80, 5);
+//    createZones(15);
+//    std::thread ticks(tickUpdate);
+//    frameUpdate();
+//
+//    ticks.join();
 
+    std::vector<NeironNet> neirons;
 
-    dd.isPlay = true;
-    spawn(100, 10);
-    std::thread ticks(tickUpdate);
-    frameUpdate();
+    for (int i = 0; i < 2000; i++){
+        neirons.push_back(NeironNet(StandartNeiron1));
+    }
 
-    ticks.join();
-//    tickUpdate();
+    std::vector<double> times;
+    for (int i = 0; i < 100; i++){
+        std::vector<double> l = {};
+        for (int i = 0; i < 7; i++){
+            l.push_back(getRandNum(1, 10, 1));
+        }
+        auto ts = std::chrono::steady_clock::now();
+        for (NeironNet neir : neirons){
+            neir.forward(l);
+        }
+        auto te = std::chrono::steady_clock::now();
+        auto elapsed_ns = std::chrono::duration_cast<std::chrono::milliseconds>(te - ts);
+        times.push_back(elapsed_ns.count());
+    }
+    double sum = 0;
+    for (int i = 0; i < 100; i++){
+        sum += times[i];
+    }
+    std::cout << sum / 100;
+// 55836000 ns
+// 427171000 ns
 
     return 0;
 }

@@ -60,11 +60,26 @@ struct Event{
 
 };
 
+struct Genom{
+    double maxSpeed, growthRate, pointPr, pointPh;
+    std::vector<std::vector<std::vector<double>>> initial_weights_1, initial_weights_2;
+
+    long long int convertToColor(){
+        long long int g1 = pointPr;
+        g1 *= 0x1000000;
+        long long int g2 = pointPh * 0x10000;
+        long long int g3 = (256 - (maxSpeed * 100)) * 0x100;
+        long long int g4 = (256 - (growthRate * 100));
+//        std::cout << g1 << " " << g2 << " " << g3 << " " << g4 << "\n";
+        return g1 + g2 + g3 + g4;
+    };
+};
+
 struct BornData{
     int x, y, s;
-    long long int gen;
-    std::vector<std::vector<std::vector<double>>> initial_weights_1;
-    std::vector<std::vector<std::vector<double>>> initial_weights_2;
+    Genom gen;
     std::vector<long long int> forBornTree;
 
 };
+
+

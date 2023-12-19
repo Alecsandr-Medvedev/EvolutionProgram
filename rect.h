@@ -1,5 +1,6 @@
 #ifndef RECT_H
 #define RECT_H
+#include <cmath>
 
 class Rect
 {
@@ -13,7 +14,7 @@ class Rect
         int *Size();
         void setPosition(int x, int y);
         void setSize(int w, int h);
-        bool isIntersection(Rect rect);
+        bool isIntersection(Rect rect, char typeIntersection='c');
         virtual ~Rect();
 
     protected:

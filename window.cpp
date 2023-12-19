@@ -39,18 +39,22 @@ window::window(Color backgroundColor) : _backgroundColor(0, 0, 0)
 
 }
 
-void window::update(std::vector<GameObject*> objs){
+void window::update(){
+
+    SDL_RenderPresent(renderer);
+}
+
+void window::startDraw(){
     SDL_SetRenderDrawColor(renderer, _backgroundColor.r(), _backgroundColor.g(), _backgroundColor.b(), _backgroundColor.a());
     SDL_RenderClear(renderer);
+}
+
+void window::draw(std::vector<GameObject*> objs){
 
     for (GameObject* obj : objs){
         drawObject(obj);
     }
-    SDL_RenderPresent(renderer);
 }
-
-
-void window::draw(std::vector<GameObject*> objs){}
 
 
 std::vector<Event> window::getEvents(){

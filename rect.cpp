@@ -37,18 +37,25 @@ int *Rect::position(){
     return _position;
 }
 
-bool Rect::isIntersection(Rect rect){
+bool Rect::isIntersection(Rect rect, char typeIntersection){
     int x_m, y_m, x_e, y_e;
     x_m = _x - (_width / 2);
     y_m = _y - (_height / 2);
     x_e = rect.x() - (rect.width() / 2);
     y_e = rect.y() - (rect.height() / 2);
-    if (x_m + _width < x_e || x_e + rect.width() < x_m ||
-        y_m + _height < y_e || y_e + rect.height() < y_m) {
-        return false;
-    }
+    if (typeIntersection == 'r'){
 
-    return true;
+        if (x_m + _width < x_e || x_e + rect.width() < x_m ||
+            y_m + _height < y_e || y_e + rect.height() < y_m) {
+            return false;
+        }
+
+        return true;
+    }
+    else if (typeIntersection == 'c'){
+        double distance = std::sqrt(std::pow(x_m - x_e, 2) + std::pow(y_m - y_e, 2));
+        return distance <= _width + rect.width();
+    }
 }
 
 void Rect::setPosition(int x, int y){

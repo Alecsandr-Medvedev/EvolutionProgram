@@ -16,9 +16,9 @@ class DynamicData
         int getFreeId();
         void addFreeId(int id);
         bool isPlay = false;
-        void setIdGen(int id, long long int gen);
+        void setIdGen(int id, Genom gen);
         void delIdGen(int id);
-        int getIdGen(int id);
+        Genom getIdGen(int id);
         void addBorn(BornData data);
         std::vector<BornData> getBorns();
         void addBornTree(std::vector<long long int> bornTree);
@@ -30,7 +30,7 @@ class DynamicData
         std::vector<std::vector<long long int>> _bornTree;
         std::queue<long long int> freeIds;
         int maxID = -1;
-        std::map<int, int> IdGens;
+        std::map<int, Genom> IdGens;
         std::vector<BornData> _bornData;
 };
 

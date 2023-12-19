@@ -20,12 +20,14 @@ class Field
         int getWidth();
         int getHeight();
         void delOrganism(int id);
+        std::vector<GameObject*> getZonesObjects();
 
     protected:
 
     private:
         int _width, _height;
         std::vector<zone*> _zones;
+        std::vector<GameObject*> _zonesObjects;
         zone* _baseSettings;
         std::vector<GameObject*> _organismes;
 };
